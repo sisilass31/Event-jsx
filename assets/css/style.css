@@ -19,8 +19,9 @@ li {
 }
 
 :root {
+  --red: #c10000;
   --orange: #f47452;
-  --light-orange: #f4755298;
+  --dark-orange: #cf6244;
   --blanc: #fff;
   --noir: #000;
   --light-grey: #bbbbbb40;
@@ -30,8 +31,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 35px;
-  background-color: var(--orange);
+  padding: 20px 35px;
+  background-position: center top;
+  background-blend-mode: multiply;
+  background-image: url(https://descodeuses.org/wp-content/uploads/bd_dc.png),linear-gradient(45deg,#f47452 20%,#cf6244 99%) !important;
 }
 
 .navbar-container a:hover {
@@ -48,7 +51,7 @@ li {
 }
 
 .profil-picture-container img {
-  width: 40px;
+  width: 35px;
 }
 
 /*footer*/
@@ -59,7 +62,9 @@ li {
 }
 
 footer {
-  background-color: var(--orange);
+  background-position: center top;
+  background-blend-mode: multiply;
+  background-image: url(https://descodeuses.org/wp-content/uploads/bd_dc.png),linear-gradient(45deg,#f47452 20%,#cf6244 99%) !important;
 }
 
 .footer-container {
@@ -115,16 +120,13 @@ footer {
 }
 
 .subscribe .input input:not(:focus):invalid {
-  border: 2px solid var(--orange);
-}
-
-.subscribe .input input:focus {
-  border: 2px solid var(--orange);
+  border: 2px solid var(--red);
 }
 
 footer hr {
   margin: 15px 50px;
   color: var(--blanc);
+  border-color: var(--blanc);
 }
 
 .copyright {
