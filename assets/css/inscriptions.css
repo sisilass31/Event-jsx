@@ -52,7 +52,7 @@
 }
 
 .input-container .button button:hover {
-  background-color: var(--rose);
+  background-color: var(--orange);
 }
 
 .input-container .button {
@@ -61,7 +61,8 @@
 
 .input-container input:not(:focus):invalid {
   color: #fff;
-  border: 2px solid var(--rose);
+  border: 2px solid #c10000;
+  background-color: var(--orange);
 }
 
 .input-container input:focus {
