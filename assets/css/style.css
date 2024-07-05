@@ -30,7 +30,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 35px;
+  padding: 16px 35px;
   background-color: var(--orange);
 }
 
@@ -48,7 +48,7 @@ li {
 }
 
 .profil-picture-container img {
-  width: 45px;
+  width: 40px;
 }
 
 /*footer*/
