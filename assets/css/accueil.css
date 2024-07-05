@@ -86,12 +86,14 @@
   padding: 20PX;
   background-color: #f47452;
   color: white;
+  transform: scale(1);
 }
 
 .decouv:hover{
   color: #f47452;
   background-color: white;
-  border: 1px solid #f47452;
+  border: 2px solid #f47452;
+  transform: scale(0.9);
 }
 
 #info {
