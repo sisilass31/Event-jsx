@@ -23,6 +23,7 @@ a {
   --orange: #f47452;
   --blanc: #fff;
   --noir: #000;
+  --light-grey: #bbbbbb40;
 }
 
 .navbar-container {
@@ -30,7 +31,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 35px;
-  background-color: #fff;
+  background-color: var(--light-grey);
 }
 
 .navbar-container a:hover {
@@ -49,3 +50,79 @@ a {
 .profil-picture-container img {
   width: 45px;
 }
+
+/*footer*/
+
+
+.logo .logo-container img {
+  width: 100px;
+}
+
+footer {
+  background-color: var(--light-grey);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.left {
+  width: 20%;
+}
+
+.social-media {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--noir);
+  font-size: 22px;
+}
+
+.contact-us h3 {
+  margin-bottom: 12px;
+  color: var(--rose);
+}
+
+.contact-us li {
+  margin-bottom: 8px;
+}
+
+.subscribe h3 {
+  margin-bottom: 12px;
+  color: var(--rose);
+}
+
+.subscribe .input input {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  outline: none;
+  margin-top: 12px;
+  background-color: var(--blanc);
+  color: var(--noir);
+  width: 300px;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+.subscribe .input input:not(:focus):invalid {
+  border: 2px solid var(--rose);
+}
+
+.subscribe .input input:focus {
+  border: 2px solid var(--orange);
+}
+
+footer hr {
+  margin: 15px 50px;
+}
+
+.copyright {
+
+  padding: 8px 50px 25px 50px;
+}
+/*footer*/

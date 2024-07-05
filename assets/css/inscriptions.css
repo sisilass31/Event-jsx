@@ -3,33 +3,67 @@
   padding: 0;
 }
 
-li {
-  display: block;
-  transition-duration: 0.5s;
+.inscription-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
 }
 
-li:hover {
+.inscription-container h1 {
+  color: var(--orange);
+  text-align: center;
+}
+
+.inscription-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.input-box input {
+  outline: none;
+  border: 2px var(--light-grey) solid;
+  width: 500px;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.input-container .button button {
   cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--orange);
+  color: var(--blanc);
+  border-radius: 8px;
+  padding: 10px 20px;
 }
 
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
+.input-container .button button:hover {
+  background-color: var(--rose);
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
+.input-container .button {
+  margin-top: 20px;
 }
 
-ul li ul li {
-  clear: both;
-  width: 100%;
+.input-container input:not(:focus):invalid {
+  color: #fff;
+  border: 2px solid var(--rose);
+}
+
+.input-container input:focus {
+  border: 2px solid var(--orange);
 }
