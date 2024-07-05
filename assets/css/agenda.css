@@ -18,6 +18,7 @@ h1 {
 
 .container2 img {
   width: 250px;
+  object-fit: cover;
   transform: scale(1);
   transition: transform 300ms ease;
   opacity: 1;
