@@ -4,49 +4,50 @@
 }
 
 #banner {
-  height: 300PX;
+  height: 300px;
   background-image: url(../images/centre-formation-accueil.jpg);
-  font-size: 50PX;
+  font-size: 50px;
   font-weight: 900;
-  font-family: OPEN SANS;
-  color: #f47452;
+
+  color: var(--orange);
   align-content: center;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.bgc{
-  width: 900PX;
-  height: 120PX;
+
+.bgc {
+  width: 900px;
+  height: 120px;
   background-color: rgba(128, 128, 128, 0.25);
   text-align: center;
   align-content: center;
 }
-#cpt{
+
+#cpt {
   width: 95%;
   height: auto;
-  padding: 30PX;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--orange);
 }
-.cpt_titre{
-  font-size: 30PX;
+.cpt_titre {
+  font-size: 30px;
   font-weight: 600;
-  color:white;
+  color: white;
   text-align: center;
   margin-bottom: 10px;
 }
-.cpt_txt{
-  font-size: 16PX;
-  color:white;
+.cpt_txt {
+  font-size: 16px;
+  color: white;
 }
 
 #introduction {
-  width: 100%;
-  height: 400PX;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -54,120 +55,129 @@
 .imglogo {
   width: 500px;
   height: auto;
-  margin-top: 30PX;
-  margin-left: 30PX;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-#intro{
-  width: 500PX;
+#intro {
+  width: 500px;
   height: auto;
-  margin: 20PX 30PX;
+  margin: 20px 30px;
 }
-#intro_titre{
-  font-size: 30PX;
+#intro_titre {
+  font-size: 30px;
   font-weight: 600;
-  margin: 30PX;
-  font-family: OPEN SANS;
-  color:#f47452;
+  margin: 30px;
+  color: var(--orange);
 }
 #intro_text {
-  width: 400PX;
-  font-size: 20PX;
-  margin-left: 30PX;
-  font-family: OPEN SANS;
+  width: 400px;
+  font-size: 20px;
+  margin-left: 30px;
   color: #333333;
 }
-.decouv{
-  width: 200PX;
-  margin: 30PX;
-  font-size: 20PX;
+
+.decouv {
+  width: 200px;
+  margin: 30px;
+  font-size: 20px;
   font-weight: 900;
-  border: 1px solid #f47452;
-  align-content: center;
-  padding: 20PX;
-  background-color: #f47452;
+  border: 1px solid var(--orange);
+  text-align: center;
+  padding: 20px;
+  background-color: var(--orange);
   color: white;
-  transform: scale(1);
+  border: 2px solid var(--orange);
 }
 
-.decouv:hover{
-  color: #f47452;
+.decouv:hover {
+  color: var(--orange);
   background-color: white;
-  border: 2px solid #f47452;
-  transform: scale(0.9);
+  border: 2px solid var(--orange);
 }
 
 #info {
-  width: 100%;
   height: auto;
   align-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 50px;
 }
 
 .inf_img {
-  width: 300PX;
+  width: 100%;
   height: auto;
   transform: scale(1);
+  transition: transform 300ms ease;
 }
-.inf_img :hover{
+
+.inf_img :hover {
   transform: scale(1.1);
 }
+
 .inf_titre {
-  width: 300PX;
-  margin: 20PX;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
 }
 
 .inf_text {
-  width: 300PX;
-  margin: 20PX;
+  margin-top: 20px;
   font-size: 16px;
   color: #666666;
 }
 
-#cpd{
-  width: 95%;
+#cpd {
   height: auto;
-  padding: 30PX;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.cpd_titre{
-  font-size: 20PX;
+
+.cpd_titre {
+  font-size: 20px;
   font-weight: 600;
-  color:var(--orange);
-margin: 10PX auto;
+  color: var(--orange);
+  margin: 10px auto;
 }
-.cpd_txt{
-  font-size: 16PX;
-  color:var(--orange);
+
+.cpd_txt {
+  font-size: 16px;
+  color: var(--orange);
 }
-.cpd_img{
+
+.cpd_img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80PX;
-  height: 80PX;
-  border: 1PX solid white;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
   background-color: #cecdcd37;
-  border-radius:50%;
+  border-radius: 50%;
   text-align: center;
   color: var(--orange);
   font-size: 40px;
 }
 
-.cpd_img:hover{
-  background-color: #f47452;
-  border: 1px solid #f47452;
+.cpd_img:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
   color: var(--blanc);
 }
 
-.center{
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#under-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
 }
